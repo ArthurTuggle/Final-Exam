@@ -1,5 +1,5 @@
 using System;
-
+using System;
 class song
 
 {
@@ -19,10 +19,16 @@ Id = id;
 Title = title;
 
 Artistinfo = artistinfo;
-}
-public void Display()
-
-{
-Console.WriteLine(base.artistinfo);
-}
-}
+ { 
+        this.ArtistInfo=artist;
+        Console.WriteLine("Artist "+this.ArtistInfo.FirstName+" "+this.ArtistInfo.LastName+
+                         " added the song titled "+this.Title);
+    } 
+    
+    //this will display Song info 
+    public void Display() 
+    { 
+        Console.WriteLine("Song info is: "+this.Id+" "+this.Title+" "+
+                           this.ArtistInfo.FirstName+" "+this.ArtistInfo.LastName);
+    } 
+} 
