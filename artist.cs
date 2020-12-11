@@ -1,28 +1,23 @@
-using System;
+using System; 
+using System.Collections; 
 
-class Artist
-
-{
-
-public string fname { get; set; }
-
-public string lname { get; set; }
-
-public string email { get; set; }
-
-
-public Artist(string fname, string lname,string email)
-
-{
-FirstName = fname;
-
-LastName = lname;
-
-Email ="unknown";
-}
-public void Display()
-
-{
-  Console.WriteLine(" Name=" + base.FirstName + " " + base.LastName);
-}
-}
+class Artist { 
+    
+    public string FirstName { get; set; }  
+    public string LastName { get; set; }  
+    public string Email { get; set; }
+    
+   
+    public Artist(string firstName, string lastName)
+    {
+        this.FirstName=firstName;
+        this.LastName=lastName;
+        this.Email="unknown";
+    }
+    
+    
+    public void Display() 
+    { 
+        Console.WriteLine("Artist's info: "+this.FirstName+" "+this.LastName);
+    } 
+} 
